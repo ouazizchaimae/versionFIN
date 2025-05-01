@@ -1,0 +1,99 @@
+<!-- db/changelog-1.1-container.xml -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+  <!-- Create Container Table -->
+    <changeSet id="1" author="your-name">
+    <createTable tableName="demande">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+        <column name="code" type="VARCHAR(500)"/>
+        <column name="libelle" type="VARCHAR(500)"/>
+        <column name="description" type="VARCHAR(500)"/>
+        <column name="date_demande" type="TIMESTAMP"/>
+        <column name="date_expedition" type="TIMESTAMP"/>
+        <column name="volume" type="NUMERIC"/>
+        <column name="action_entreprise" type="VARCHAR(500)"/>
+        <column name="trg" type="VARCHAR(500)"/>
+        <column name="cause" type="VARCHAR(500)"/>
+        <column name="commentaire" type="VARCHAR(500)"/>
+
+        <column name="produit_marchand_id" type="BIGINT">
+          <constraints nullable="false"/>
+        </column>
+        <column name="client_id" type="BIGINT">
+          <constraints nullable="false"/>
+        </column>
+        <column name="type_demande_id" type="BIGINT">
+          <constraints nullable="false"/>
+        </column>
+        <column name="etat_demande_id" type="BIGINT">
+          <constraints nullable="false"/>
+        </column>
+
+    </createTable>
+  </changeSet>
+
+    <!-- Add foreign key constraint -->
+  <changeSet id="2" author="your-name">
+      <addForeignKeyConstraint
+              baseTableName="demande"
+              baseColumnNames="produit_marchand_id"
+              referencedTableName="produit_marchand"
+              referencedColumnNames="id"
+              constraintName="fk_demande_produit_marchand"/>
+      <addForeignKeyConstraint
+              baseTableName="demande"
+              baseColumnNames="client_id"
+              referencedTableName="client"
+              referencedColumnNames="id"
+              constraintName="fk_demande_client"/>
+      <addForeignKeyConstraint
+              baseTableName="demande"
+              baseColumnNames="type_demande_id"
+              referencedTableName="type_demande"
+              referencedColumnNames="id"
+              constraintName="fk_demande_type_demande"/>
+      <addForeignKeyConstraint
+              baseTableName="demande"
+              baseColumnNames="etat_demande_id"
+              referencedTableName="etat_demande"
+              referencedColumnNames="id"
+              constraintName="fk_demande_etat_demande"/>
+
+  </changeSet>
+
+    <!-- Create Sequence for ContainerType -->
+  <changeSet id="3" author="your-name">
+    <createSequence sequenceName="demande_seq" startValue="1" incrementBy="1"/>
+  </changeSet>
+
+  <!-- Load Data from CSV -->
+  <changeSet id="4" author="your-name">
+    <loadData
+            file="classpath:/db/migration/data/demande/Demande.csv"
+            tableName="demande">
+      <column name="id" type="NUMERIC"/>
+          <column name="code" type="STRING"/>
+          <column name="libelle" type="STRING"/>
+          <column name="description" type="STRING"/>
+          <column name="date_demande" type="TIMESTAMP"/>
+          <column name="date_expedition" type="TIMESTAMP"/>
+          <column name="volume" type="NUMERIC"/>
+          <column name="action_entreprise" type="STRING"/>
+          <column name="trg" type="STRING"/>
+          <column name="cause" type="STRING"/>
+          <column name="commentaire" type="STRING"/>
+        <column name="produit_marchand" type="BIGINT"/>
+        <column name="client" type="BIGINT"/>
+        <column name="type_demande" type="BIGINT"/>
+        <column name="etat_demande" type="BIGINT"/>
+    </loadData>
+  </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,29 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
+
+            <include file="classpath:db/migration/changelog/referentiel/ProduitSource.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/EtatDemande.xml"/>
+        <include file="classpath:db/migration/changelog/expedition/CharteChimiqueDetail.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/ProduitMarchand.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/Produit.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/RatioUnite.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/Entite.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/Client.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/Unite.xml"/>
+        <include file="classpath:db/migration/changelog/expedition/ExpeditionProduit.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/TypeDemande.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/StadeOperatoireProduit.xml"/>
+        <include file="classpath:db/migration/changelog/demande/Demande.xml"/>
+        <include file="classpath:db/migration/changelog/expedition/TypeExpedition.xml"/>
+        <include file="classpath:db/migration/changelog/expedition/AnalyseChimique.xml"/>
+        <include file="classpath:db/migration/changelog/expedition/Expedition.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/StadeOperatoire.xml"/>
+        <include file="classpath:db/migration/changelog/supply/SuiviProduction.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/ElementChimique.xml"/>
+        <include file="classpath:db/migration/changelog/expedition/CharteChimique.xml"/>
+        <include file="classpath:db/migration/changelog/referentiel/TypeClient.xml"/>
+        <include file="classpath:db/migration/changelog/expedition/AnalyseChimiqueDetail.xml"/>
+
+</databaseChangeLog>
