@@ -3,6 +3,8 @@ package ma.zyn.app.zynerator.bean;
 
 import jakarta.persistence.Transient;
 import jakarta.persistence.MappedSuperclass;
+import ma.zyn.app.bean.core.expedition.Expedition;
+
 import java.io.Serializable;
 
 
@@ -54,5 +56,9 @@ public class BaseEntity {
     public String toString() {
 
         return this.getId() != null ? this.getId().toString() : null;
+    }
+
+    public void setExpedition(Expedition saved) {
+        
     }
 }

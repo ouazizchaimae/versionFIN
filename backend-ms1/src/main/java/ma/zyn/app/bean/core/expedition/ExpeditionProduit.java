@@ -32,7 +32,7 @@ public class ExpeditionProduit  extends BaseEntity     {
     private AnalyseChimique analyseChimique ;
     private CharteChimique charteChimique ;
 
-
+    private Expedition expedition;
     public ExpeditionProduit(){
         super();
     }
@@ -97,6 +97,14 @@ public class ExpeditionProduit  extends BaseEntity     {
     }
     public void setCharteChimique(CharteChimique charteChimique){
         this.charteChimique = charteChimique;
+    }
+    @ManyToOne
+    @JoinColumn(name = "expedition_id") // ou le nom de colonne que vous préférez
+    public Expedition getExpedition(){
+        return this.expedition;
+    }
+    public void setExpedition(Expedition expedition){
+        this.expedition = expedition;
     }
 
     @Override

@@ -1,5 +1,6 @@
 package ma.zyn.app.bean.core.expedition;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -101,7 +102,7 @@ public class Expedition  extends BaseEntity     {
     public void setTypeExpedition(TypeExpedition typeExpedition){
         this.typeExpedition = typeExpedition;
     }
-    @OneToMany(mappedBy = "expedition")
+    @OneToMany(mappedBy = "expedition", cascade = CascadeType.ALL, orphanRemoval = true)
     public List<ExpeditionProduit> getExpeditionProduits(){
         return this.expeditionProduits;
     }

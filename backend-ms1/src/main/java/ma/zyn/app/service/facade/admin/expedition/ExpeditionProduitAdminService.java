@@ -53,4 +53,7 @@ public interface ExpeditionProduitAdminService {
 
     public String uploadFile(String checksumOld, String tempUpladedFile,String destinationFilePath) throws Exception ;
 
+    void deleteByExpeditionId(Long id);
+
+    List<ExpeditionProduit> findByExpeditionId(Long id);
 }

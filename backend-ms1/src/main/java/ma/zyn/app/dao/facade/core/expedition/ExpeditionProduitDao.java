@@ -19,7 +19,8 @@ public interface ExpeditionProduitDao extends AbstractRepository<ExpeditionProdu
     List<ExpeditionProduit> findByCharteChimiqueId(Long id);
     int deleteByCharteChimiqueId(Long id);
     long countByCharteChimiqueCode(String code);
-
+    void deleteByExpeditionId(Long id);
+    List<ExpeditionProduit> findByExpeditionId(Long id);
     @Query("SELECT NEW ExpeditionProduit(item.id,item.libelle) FROM ExpeditionProduit item")
     List<ExpeditionProduit> findAllOptimized();
 

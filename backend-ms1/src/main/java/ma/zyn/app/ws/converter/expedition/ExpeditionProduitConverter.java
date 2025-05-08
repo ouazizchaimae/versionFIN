@@ -32,6 +32,15 @@ public class ExpeditionProduitConverter {
     private CharteChimiqueConverter charteChimiqueConverter ;
     private boolean analyseChimique;
     private boolean charteChimique;
+    private boolean expedition;
+
+    public boolean isExpedition() {
+        return this.expedition;
+    }
+
+    public void setExpedition(boolean expedition) {
+        this.expedition = expedition;
+    }
 
     public  ExpeditionProduitConverter() {
         initObject(true);

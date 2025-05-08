@@ -124,7 +124,15 @@ public class ExpeditionProduitAdminServiceImpl implements ExpeditionProduitAdmin
         }
         return condition;
     }
+    @Override
+    public void deleteByExpeditionId(Long id) {
+        dao.deleteByExpeditionId(id);
+    }
 
+    @Override
+    public List<ExpeditionProduit> findByExpeditionId(Long id) {
+        return dao.findByExpeditionId(id);
+    }
 
 
 
