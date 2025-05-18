@@ -173,7 +173,7 @@ const ExpeditionAdminCreate = () => {
                     item.charteChimique = selectedCharteChimique;
                 }
             });
-            ExpeditionProduitsReset({code: '' ,libelle: '' ,description: '' ,});
+            expeditionProduitsReset({code: '' ,libelle: '' ,description: '' ,});
             setSelectedAnalyseChimique(emptyAnalyseChimique);
             setSelectedCharteChimique(emptyCharteChimique);
             setIsEditModeExpeditionProduits(false);
@@ -191,7 +191,7 @@ const ExpeditionAdminCreate = () => {
                 updatedExpeditionProduit = item;
             }
         });
-        ExpeditionProduitsReset({code: updatedExpeditionProduit.code ,libelle: updatedExpeditionProduit.libelle ,description: updatedExpeditionProduit.description ,});
+        expeditionProduitsReset({code: updatedExpeditionProduit.code ,libelle: updatedExpeditionProduit.libelle ,description: updatedExpeditionProduit.description ,});
         setSelectedAnalyseChimique(updatedExpeditionProduit.analyseChimique);
         setSelectedCharteChimique(updatedExpeditionProduit.charteChimique);
         setIsExpeditionProduitsElementCollapsed(!isExpeditionProduitsElementCollapsed);

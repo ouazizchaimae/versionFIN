@@ -1,0 +1,4 @@
+id,code,libelle,style,description
+1,PROD-A,Ciment CPJ45,primary,Ciment Portland 45
+2,PROD-B,Ciment CPA55,warning,Ciment Portland Artificiel 55
+3,PROD-C,Clinker,info,Clinker pour cimenterie

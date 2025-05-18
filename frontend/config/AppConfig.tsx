@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://localhost:8036/';
+export const BASE_URL = 'http://localhost:8036/';
 
 export const ADMIN_URL = BASE_URL + 'api/admin/';
 export const ADMIN_AUTH_URL = BASE_URL + 'login';

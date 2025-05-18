@@ -1,0 +1,3 @@
+id,libelle,description,valeur,conformite,surqualite,element_chimique,analyse_chimique
+1,Analyse Fer,Teneur en Fer,98.5,true,false,1,1
+2,Analyse Cuivre,Teneur en Cuivre,0.5,true,false,2,1

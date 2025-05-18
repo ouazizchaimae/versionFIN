@@ -1,0 +1,4 @@
+id,libelle,code,description,type_client
+1,Client A,CLI-A,Client industriel local,1
+2,Client B,CLI-B,Client international,3
+3,Client C,CLI-C,Client VIP,2

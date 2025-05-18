@@ -1,0 +1,4 @@
+id,libelle,code,style,description
+1,Client Standard,STD,primary,Client régulier sans exigences particulières
+2,Client VIP,VIP,warning,Client prioritaire avec exigences élevées
+3,Client International,INT,info,Client basé à l'étranger

@@ -107,18 +107,5 @@ public class ExpeditionProduit  extends BaseEntity     {
         this.expedition = expedition;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ExpeditionProduit expeditionProduit = (ExpeditionProduit) o;
-        return id != null && id.equals(expeditionProduit.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
-
-}
+   }
 

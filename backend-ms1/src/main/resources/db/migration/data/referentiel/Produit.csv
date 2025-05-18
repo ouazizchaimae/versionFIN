@@ -1,0 +1,5 @@
+id,code,libelle,description
+1,PROD-001,Clinker,Produit intermédiaire pour cimenterie
+2,PROD-002,Ciment CPJ45,Ciment Portland composé
+3,PROD-003,Laitier,Laitier de haut fourneau
+4,PROD-004,Pouzzolane,Matériau volcanique pour ciment

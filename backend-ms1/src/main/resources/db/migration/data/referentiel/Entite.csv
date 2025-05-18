@@ -1,0 +1,4 @@
+id,code,libelle,style,description
+1,USINE-A,Usine Principale,primary,Site de production principal
+2,USINE-B,Usine Secondaire,warning,Site de production secondaire
+3,DEPOT,Dépôt Central,info,Stockage centralisé

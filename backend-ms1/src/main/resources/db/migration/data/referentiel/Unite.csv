@@ -1,0 +1,5 @@
+id,code,libelle,description,style
+1,KG,Kilogramme,Unité de poids en kilogrammes,primary
+2,T,Tonne,Métrique (1000 kg),warning
+3,G,Gramme,Unité de poids en grammes,info
+4,%,Pourcentage,Pourcentage (ex: pureté),success

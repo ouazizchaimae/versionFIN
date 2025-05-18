@@ -1,0 +1,5 @@
+id,libelle,code,style,description
+1,En Attente,PENDING,warning,Demande en cours de traitement
+2,Validée,APPROVED,success,Demande approuvée
+3,Rejetée,REJECTED,danger,Demande refusée
+4,Expédiée,SHIPPED,info,Demande expédiée

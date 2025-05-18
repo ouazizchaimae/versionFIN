@@ -1,0 +1,3 @@
+id,libelle,description,minimum,maximum,average,methode_analyse,unite,element_chimique,charte_chimique
+1,Standard Fer,Standard pour Fer,95.0,100.0,97.5,Spectrométrie,%,1,1
+2,Standard Cuivre,Standard pour Cuivre,0.1,1.0,0.5,Spectrométrie,ppm,2,1

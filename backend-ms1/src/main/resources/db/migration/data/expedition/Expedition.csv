@@ -1,0 +1,3 @@
+id,code,libelle,description,client,type_expedition
+1,EXP-001,Expédition client A,Expédition pour client A,1,1
+2,EXP-002,Expédition client B,Expédition pour client B,2,2

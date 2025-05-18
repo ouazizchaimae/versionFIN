@@ -1,0 +1,5 @@
+id,code,libelle,style,description
+1,SRC-001,Carrière A,primary,Source de calcaire
+2,SRC-002,Carrière B,warning,Source d'argile
+3,SRC-003,Mine C,info,Source de gypse
+4,SRC-004,Import,success,Matériau importé

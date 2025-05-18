@@ -176,7 +176,7 @@ import {ClientAdminService} from '../../../../../../controller/service/admin/ref
                     </View>
 
                         {showDateDemandeFromPicker && (
-                        <DateTimePicker value={criteria.DateDemandeFrom || new Date()} mode="date" display="default" onChange={onDateDemandeFromChange}/>
+                        <DateTimePicker value={criteria.dateDemandeFrom || new Date()} mode="date" display="default" onChange={onDateDemandeFromChange}/>
                         )}
 
                         <View style={styles.inputRow}>
@@ -190,7 +190,7 @@ import {ClientAdminService} from '../../../../../../controller/service/admin/ref
                         </View>
 
                         {showDateDemandeToPicker && (
-                        <DateTimePicker value={criteria.DateDemandeTo || new Date()} mode="date" display="default" onChange={onDateDemandeToChange}/>
+                        <DateTimePicker value={criteria.dateDemandeTo || new Date()} mode="date" display="default" onChange={onDateDemandeToChange}/>
                                 )}
 
                     <View style={styles.inputRow}>
@@ -204,7 +204,7 @@ import {ClientAdminService} from '../../../../../../controller/service/admin/ref
                     </View>
 
                         {showDateExpeditionFromPicker && (
-                        <DateTimePicker value={criteria.DateExpeditionFrom || new Date()} mode="date" display="default" onChange={onDateExpeditionFromChange}/>
+                        <DateTimePicker value={criteria.dateExpeditionFrom || new Date()} mode="date" display="default" onChange={onDateExpeditionFromChange}/>
                         )}
 
                         <View style={styles.inputRow}>
@@ -218,7 +218,7 @@ import {ClientAdminService} from '../../../../../../controller/service/admin/ref
                         </View>
 
                         {showDateExpeditionToPicker && (
-                        <DateTimePicker value={criteria.DateExpeditionTo || new Date()} mode="date" display="default" onChange={onDateExpeditionToChange}/>
+                        <DateTimePicker value={criteria.dateExpeditionTo || new Date()} mode="date" display="default" onChange={onDateExpeditionToChange}/>
                                 )}
 
                     <View style={styles.inputRow}>

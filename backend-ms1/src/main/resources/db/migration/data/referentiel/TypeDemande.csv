@@ -1,0 +1,4 @@
+id,libelle,code,style,description
+1,Demande Standard,STD,primary,Demande classique
+2,Demande Urgente,URG,warning,Demande à traiter en priorité
+3,Demande Spéciale,SPC,info,Demande avec spécifications particulières
